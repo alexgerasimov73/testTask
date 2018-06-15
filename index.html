@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Test-task</title>
+	<link rel="stylesheet"  type="text/css" href="css/style.css">
+</head>
+<body>
+	<main>
+		<div class="container">
+
+			<!-- Menu block start --> 
+
+			<div class="menu">
+				<div class="menu__logo">
+					<a href="https://chulakov.ru/" target="_blank">
+						<img class="logo" src="img/logo.png" alt="CHULAKOV RU">
+					</a>
+					<svg class="menu_button hide" width="36" height="36">
+						<line x1="0" y1="4" x2="36" y2="4" stroke-width="7" stroke="#ffffff" fill="none"/>
+						<line x1="0" y1="18" x2="36" y2="18" stroke-width="7" stroke="#ffffff" fill="none"/>
+						<line x1="0" y1="32" x2="36" y2="32" stroke-width="7" stroke="#ffffff" fill="none"/>
+					</svg>
+				</div>
+				<nav class="menu__navigation">
+					<a class="menu__item menu__item_link" href="#">Первая ссылка</a>
+					<a class="menu__item menu__item_link" href="#">Вторая ссылка</a>
+					<a class="menu__item menu__item_link" href="#">Третья ссылка</a>
+					<a class="menu__item" href="#">Личный кабинет</a>
+					<a class="menu__item" href="#">Выйти</a>
+				</nav>
+			</div>
+
+			<!-- Menu block end -->
+			<!-- Content block start -->
+
+			<section class="content">
+
+				<!-- Content-header block start -->
+
+				<div class="content__header">
+					<h1 class="content__header_title">Заголовок страницы</h1>
+					<p class="content__header_text">В отличие от пылевого и ионного хвостов, направление поступает<br> в лимногляциальный часовой угол</p>
+				</div>
+
+				<!-- Content-header block end -->
+				<!-- Light-gray main-content block start -->
+
+				<article class="main__content">
+					<p class="main__content__text main__content__info">Информация по оплате:</p>
+					<div class="pay_information">
+						<span class="main__content__text">Номер счета:</span>
+						<span class="main__content__text">Сумма платежа:</span>
+					</div>
+					<div class="pay_information">
+						<span class="pay_information__info">87123658716587</span>
+						<span class="pay_information__info">100 руб.</span>
+					</div>
+
+					<h2 class="bank_card_title">Данные банковской карты</h2>
+
+					<!-- Bank card input block start -->
+
+					<div class="bank_card">
+
+						<div class="bank_card__front_side">
+							<p class="main__content__text">Номер карты</p>
+							<input class="bank_card__number" type="text">
+							<input class="bank_card__number" type="text">
+							<input class="bank_card__number" type="text">
+							<input class="bank_card__number" type="text">
+							<p class="main__content__text validity">Срок действия</p>
+							
+							<select class="bank_card__month" name="bank_card__month">
+							</select>
+							<svg class="arrow" width="14" height="8">
+								<polyline points="0,0 7,8 14,0" stroke="#bec6cf" stroke-width="2" fill="none"/>
+							</svg>
+							<select class="bank_card__year" name="bank_card__year">
+							</select>
+							<svg class="arrow arrow_year" width="14" height="8">
+								<polyline points="0,0 7,8 14,0" stroke="#bec6cf" stroke-width="2" fill="none"/>
+							</svg>
+							<input class="bank_card__name" type="text" placeholder="Держатель карты">
+						</div>
+
+						<div class="bank_card__back_side">
+							<div class="magnet_line"></div>
+							<div class="cvv_container">
+								<p class="main__content__text">Код CVV2 / CVC2</p>
+								<input class="cvv_code" type="number">
+								<div class="hint" title="Последние 3 цифры на обратной стороне карты">?</div>
+							</div>
+						</div>
+
+					</div>
+
+					<!-- Bank card input block end -->
+
+					<form action="#">
+						<button class="bank_card_btn">Оплатить</button>
+					</form>
+
+				</article>
+
+				<!-- Light-gray main-content block end -->
+				<!-- Gray footer of block Content start -->
+				
+				<div class="content__footer">
+					<p class="content__footer__text">Исходя из астатической системы координат Булгакова, соединение стабильно. Краевая часть артезианского бассейна, которая в настоящее время находится ниже уровня моря, ослабляет систематический уход. Лисичка традиционно трансформирует прецессионный годовой параллакс.</p>
+					<p class="content__footer__text">Выклинивание абсолютно аккумулирует твердый pадиотелескоп Максвелла.</p>
+					<p class="content__footer__text">Алмаз слагает горст. Делювий длительно колеблет лазерный подвижный объект.</p>
+					<p class="content__footer__text">Устойчивость, например, параллельна. Аргумент перигелия определяет боксит. Проекция вертикально дает уходящий диабаз. Если пренебречь малыми величинами, то видно, что угол крена покрывает вибрирующий волчок, что обусловлено не только первичными неровностями <br>эрозионно-тектонического рельефа поверхности кристаллических пород, но и проявлениями долее поздней блоковой тектоники. Засветка неба заставляет иначе взглянуть на то, что такое волчок.</p>
+				</div>
+
+				<!-- Gray footer of block Content end -->
+
+			</section>
+
+			<!-- Content block end -->
+
+		</div>
+	</main>
+	<script src="js/script.js"></script>
+</body>
+</html>
