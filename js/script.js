@@ -3,6 +3,7 @@
 const cardNumbers = document.getElementsByClassName('bank_card__number');
 const cardName = document.querySelector('.bank_card__name');
 const cvvCode = document.querySelector('.cvv_code');
+const arrows = document.getElementsByClassName('arrow');
 const bankCardMonth = document.querySelector('.bank_card__month');
 const bankCardYear = document.querySelector('.bank_card__year');
 const inputFields = document.querySelectorAll('input');
@@ -79,6 +80,21 @@ cvvCode.addEventListener('input', function() {
 		wrongEnter(this, 3);
 	});
 
+let el = document.querySelector('.arrow_year');
+
+function show(elem) {
+	let event;
+	    event = document.createEvent('MouseEvents');
+	    event.initMouseEvent('mousedown', true, true, window);
+	    elem.dispatchEvent(event);
+}
+
+for (let i = 0; i < arrows.length; i++) {
+	//console.log(i)
+	arrows[i].addEventListener('click', function() {
+		show(el);
+	});
+}		
 
 // Функция установки текущего года в поле select
 
